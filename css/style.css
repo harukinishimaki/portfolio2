@@ -1,0 +1,497 @@
+@charset "UTF-8";
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1.6;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* リセットCSS */
+
+#top-header{
+    height: 80px;
+    width: 100%;
+    line-height: 80px;
+    position: fixed;
+    z-index: 100;
+    background-color: white;
+}
+
+.header-flex{
+    display: flex;
+}
+
+.header-logo{
+    color: #192F60;
+    font-family: Roboto;
+    font-style: italic;
+    font-size: 40px;
+    font-weight: 900;
+    margin-left: 40px;
+}
+
+ul{
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 400px;
+    font-family: Roboto;
+    font-style: normal;
+}
+
+li{
+    margin-right: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: #192F60;
+}
+/* header↑ */
+
+#firstview{
+    width: 100%;
+    height: 580px;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.firstview-img{
+    position: absolute;
+    background: url(../img/yakei.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 420px;
+    width: 80%;
+    margin-left: 10%;
+    top: 80px;
+    z-index: 2;
+}
+
+.firstview-logo{
+    /* position: fixed; */
+    top: 180px;
+    left: 180px;
+    z-index: -1;
+}
+
+.nisimakide{
+    background-color: white;
+    width: 220px;
+    height: 90px;
+    line-height: 90px;
+}
+
+.nisimakide-title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    color: #192F60;
+    margin-left: 15px;
+}
+
+.hitohito{
+    display: flex;
+}
+
+.hitowo{
+    background-color: white;
+    width: 146px;
+    height: 90px;
+    line-height: 90px;
+}
+
+.hitowo-title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    color: #192F60;
+    margin-left: 15px;
+}
+
+.hitowo-sub{
+    background-color: white;
+    width: 160px;
+    height: 90px;  
+}
+
+.hitowo-sub-content{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    color: #192F60;
+    margin-left: 16px;
+    margin-top: 25px;
+}
+
+.siawaseni{
+    background-color: white;
+    width: 271px;
+    height: 90px;
+    line-height: 90px;
+}
+
+.siawaseni-title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    color: #192F60;
+    margin-left: 15px;
+}
+
+#firstview a{
+    color: #192F60;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 520px;
+    left: 82%;
+}
+/* firstview↑ */
+
+#secondview{
+    width: 100%;
+    height: 580px;
+    background-color: white; 
+}
+
+.blue-side{
+    width: 25%;
+    height: 580px;
+    background-color: #192F60;
+    margin-left: 75%;
+    z-index: 1;
+}
+
+.text-box{
+    background-color: white;
+    border: solid 1px #e0e2e9;
+    position: absolute;
+    top: 660px;
+    left: 40%;
+    z-index: 2;
+    width: 55%;
+    height: 420px;
+}
+
+.text{
+    color: #192F60;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 110px;
+    margin-top: 60px;
+    line-height: 50px;
+}
+/* secondview↑ */
+
+#thirdview{
+    background-color: white;
+    height: 580px;
+    width: 100%;
+    z-index: 100;
+}
+
+.service-title{
+    margin-left: 10%;
+    color: #192F60;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 80px;
+}
+
+.nishimaki-service{
+    display: flex;
+    width: 100%;
+}
+
+.nishimaki-app{
+    width: 35%;
+    margin-left: 10%;
+    margin-top: 40px;
+}
+
+.nishimakiapp-img{
+    background: url(../img/blue2.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+
+.nishimakiapp-box{
+    background-color: white;
+    border: solid 1px #e0e2e9;
+    height: 100px;
+    line-height: 100px;
+}
+
+.nsihimakiapp-title{
+    color: #192F60;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 20%;
+}
+
+.nishimaki-business{
+    width: 35%;
+    margin-left: 10%;
+    margin-top: 40px;
+}
+
+.nishimakibusiness-img{
+    background: url(../img/blue2.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+
+.nishimakibusiness-box{
+    background-color: white;
+    border: solid 1px #e0e2e9;
+    height: 100px;
+    line-height: 100px;
+}
+
+.nishimakibusiness-title{
+    color: #192F60;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 7%;
+}
+/* thirdview↑ */
+
+#forthview{
+    width: 100%;
+    height: 580px;
+    background-color: white;
+}
+
+.blue-side2{
+    width: 25%;
+    height: 580px;
+    background-color: #192F60;
+    z-index: 1;
+}
+
+.news-big-box{
+    z-index: 2;
+    border: solid 1px #e0e2e9;
+    height: 420px;
+    margin-left: 10%;
+    width: 80%;
+    position: absolute;
+    top: 1900px;
+    background-color: white;
+    display: flex;
+}
+
+.news-box{
+    margin-top: 50px;
+    width: 40%;
+    height: 320px;
+    border-right: solid 1px #e0e2e9;
+}
+
+.news-title{
+    color: #192F60;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 64px;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.button{
+    background-color: white;
+    border: solid 1px #192F60;
+    color: #192F60;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 20px;
+    padding: 10px 30px;
+    margin-left: 150px;
+    margin-top: 150px;
+}
+
+.news-content-box{
+    margin-top: 50px;
+    width: 75%;
+    height: 320px;
+}
+
+.news1{
+    margin-top: 25px;
+    color: #192F60;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 16px;
+    margin-left: 50px;
+    width: 80%;
+}
+
+.hidtuke1{
+    font-weight: bold;
+}
+
+.news2{
+    margin-top: 18px;
+    color: #192F60;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 16px;
+    margin-left: 50px;
+    width: 80%;
+}
+
+.hidtuke2{
+    font-weight: bold;
+}
+
+.news3{
+    margin-top: 18px;
+    color: #192F60;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 16px;
+    margin-left: 50px;
+    width: 80%;
+}
+
+.hidtuke3{
+    font-weight: bold;
+}
+/* forthview↑ */
+
+#fifthvieew{
+    width: 100%;
+    height: 580px;
+    background-color: white;
+}
+
+.fifth-title{
+    color: #192F60;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 64px;
+    font-weight: bold;
+    /* transform: rotate(90deg); */
+    letter-spacing: 5px;
+}
+
+
+
+
+
+
+
